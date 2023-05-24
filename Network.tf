@@ -1,5 +1,5 @@
 resource "hcloud_network" "hc_private" {
-  name     = "hc_net"
+  name     = "NAME_hc_net"
   ip_range = var.ip_range
 }
 

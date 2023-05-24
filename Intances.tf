@@ -23,7 +23,7 @@ data "template_file" "init" {
   template = file("k3s.sh.tpl")
 }
 
-resource "hcloud_ssh_key" "hetzner_key" {
+resource "hcloud_ssh_key" "NAME_hetzner_key" {
   name       = "hetzner-key"
   public_key = file("./hetzner.pub")
 }
