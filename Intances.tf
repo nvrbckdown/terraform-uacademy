@@ -15,7 +15,7 @@ resource "hcloud_server" "web" {
   image       = var.os_type
   server_type = var.server_type
   location    = var.location
-  ssh_keys    = [hcloud_ssh_key.hetzner_key.id]
+  ssh_keys    = [hcloud_ssh_key.NAME_hetzner_key.id]
   user_data   = data.template_file.init.rendered
 }
 
